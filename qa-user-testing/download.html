@@ -15,44 +15,34 @@
     <meta name="author" content="Keith Hall" />
     <link rel="stylesheet" href="../theme.css" />
     <link rel="stylesheet" href="../site.css" />
-   <!-- Google fonts for Oswald -->
+    <!-- Google fonts for Oswald -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Font Awesome-->
-
-
-    <script src="../theme.js"></script>
+    <!-- Font Awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body class= "light-theme">
-    <!-- This is the card container. -->
+    <!-- The card container. -->
     <div class="assign-container">
     <h1 id= "app-header">Welcome Nation of Israel</h1>
         <div class="assign-content">
-            <!-- The card with its' title and content -->
+            <!-- The card title and content container -->
             <div class="card">
                 <div class="card-title">QA & User Testing</div>
 				<div class="card-content">
-                    <div class= "form">
-
+                    <div class= "form">   <!-- Form (home) and download button containers -->
 					    <div class= "form-field">
-				            <button id= "btnCheckPhrase" href="resume.docx"><span i class="fa fa-download"></i></span>&nbsp; Download</button>
+				            <button id= "download-btn" href="resume.docx"><span i class="fa fa-download"></i></span>&nbsp; Download</button>
                         </div>
 					</div>
                 </div>
 		    </div>
         </div>
     </div>
-	 <!-- This is the results card container. -->
-	<div class="assign-container">
-		<!-- This is the results card content container. -->
-        <div class="assign-content">
-		    <div id= "return-home-container">
-	        <a href= "../index.html" class="return-home">Return</a><span class= "next"><a href= "../deployment/download.html" class="return-home">Next</a></span>
-	        </div>
-        </div>
-    </div>
+	<div id= "return-home-container">  <!-- Return and next links container -->
+	    <a href= "../index.html" class="return-home">Return</a><span class= "next"><a href= "../deployment/download.html" class="return-home">Next</a></span>
+	</div>
 <script>
- // Download Resume
+ // Download QA Packet
                   $(document).ready(function () {
             $("#link").click(function (e) {
                 e.preventDefault();
@@ -72,7 +62,6 @@
                 ctx.fillRect(30, 30, 50, 50);
             }
         }
-
         $(document).ready(function() {
             // $(document).draw();
             $('#content').animate({

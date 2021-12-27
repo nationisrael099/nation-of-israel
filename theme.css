@@ -6,8 +6,9 @@
 */
 body {
     font-family: Oswald, Verdana, Arial, sans-serif;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;  /* Hide horizontal scrollbar */
 }
+/* Light theme styling */
 body.light-theme {
 	color: #000;
     background-color: #fff;
@@ -40,9 +41,8 @@ body.dark-theme a:hover {
 	background-color: #303030;
     color: #d176e1;
 }
+/* Styling of page headings. */
 h1, h2, h3, h4 {
-
-/* Styling of the main headings. */
     background-color:  #000080;
     color: #fff;
     border: 1px solid #D6A800;
@@ -52,27 +52,29 @@ h1, h2, h3, h4 {
 h2 {
 	font-size: 27.65px;
 }
-/* Link styles. */
+/* Link styles */
 a {
     text-decoration: none;
-    color: #3C275A;
+    color: #191970;
 }
-/* Text color of return-home and other links to pages already visited. */
+/* Color of links already visited. */
 a:visited  {
-    color: #3C275A;
+    color:  #3F00FF;
 }
-/* Text and background colors of return-home and other links on mouse hover. */
+/*  Link styles on mouse hover. */
 a:hover {
     background-color: #D6A800;
-    color:  #4F3674;
+    color:   #000080;
 }
-.card {  /* Card styling */
+/* The card container */
+.card {
 	padding: 8px 0 4px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 	transition: 0.3s;
 	width: 60%;
 	background-color: #fff;
 }
+/* The card title and content styling */
 .card-title {
 	margin-top: 40px;
 	text-align: center;
@@ -86,19 +88,19 @@ a:hover {
 .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-/* Palindrome check phrase button styling */
-#btnCheckPhrase {
+/* Download button styling */
+#download-btn {
 	width: 55%;
 	padding: 14px;
-	background-color: #4F3674;
+	background-color: #000080;
     color: #fff;
 	font-size: 16px;
-	border-radius: 4px;
-	border-radius: 4px;
-    margin-left: 203.9px; /* Moves button right or left within the form-field container */
+	border-radius: 1px;
+	border-radius: 1px;
+    margin-left: 203.9px;
 	cursor: pointer;
 }
-#btnCheckPhrase:hover {
+#download-btn:hover {
 	background-color: #D6A800;
-    color: #4F3674;
+    color:  #000080;
 }
