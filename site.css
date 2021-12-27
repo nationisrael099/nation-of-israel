@@ -1,0 +1,70 @@
+/**
+    Title: Project Management Portal
+    Author: Keith Hall
+    Date: 08/22/2021
+    Modified By: Professor  P. Itskovich, Keith Hall
+    Description: This is the global style sheet for the Project Management Portal.
+*/
+#container {
+    margin: 20px 100px 0;
+	padding-top: 15px; /* Use padding-top to position the toggle switch and text against the container. */
+}
+#icon-mode:hover {
+	cursor: pointer;        /* Toggle icon and text. */
+}
+#icon-text {
+	padding-left: 10px;
+	margin-right: 100px;
+}
+.pull-right {
+	float: right;
+}
+/* Card results styling. */
+.assign-container {
+    padding: 10px;
+	margin-top: -38px;
+}
+.assign-content {
+    width: 88%;
+    margin: 3% auto 0;
+	margin-left: 315px;
+}
+.app-header {   /* H1 heading. */
+	text-align: center;
+	color: #fff;
+	font-size: 39.81px;
+}
+#app-header {
+	text-align: center;
+	font-size: 39.81px;
+}
+#return-home-container {
+    margin-top: -17px;
+}
+.next {
+    margin-left: 635px;
+}
+.return-home {
+	color: #4F3674;
+	text-decoration: none;
+}
+.return-home:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+}
+.return-home:visited {
+    color: #3c275a;
+}
+.full-width {
+	width: 100%;
+}
+/* Form styling. */
+.form {
+	display: inline-grid;
+    grid-template-columns: auto;
+}
+/* Centers button container (form field) within the form container */
+.form-field {
+	padding: 20px;
+	margin-left: 20px;
+}
