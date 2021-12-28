@@ -31,7 +31,8 @@
 				<div class="card-content">
                     <div class= "form">   <!-- Form (home) and download button containers -->
 					    <div class= "form-field">
-				            <button id= "download-btn" href="resume.docx"><span i class="fa fa-download"></i></span>&nbsp; Download</button>
+						    <!-- Turm button into link -->
+				            <button id= "download-btn" onclick="document.location='intro-packet.zip'"><span><i class="fa fa-download"></i>&nbsp; Download</span></button>
                         </div>
 					</div>
                 </div>
@@ -42,37 +43,38 @@
 	    <a href= "../index.html" class="return-home">Return</a><span class= "next"><a href= "../request-document/download.html" class="return-home">Next</a></span>
 	</div>
 <script>
- // Download Introductory Packet
-                  $(document).ready(function () {
-            $("#link").click(function (e) {
-                e.preventDefault();
+  // Download Introductory Packet
+  $(document).ready(function () {
 
-                window.location.href
-                    = "resume.docx";
-            });
-        });
-        // Resume HTML page
-            function draw() {
-            var canvas = $('canvas')[0];
-            if(canvas.getContext) {
-                var ctx = canvas.getContext('2d');
-                ctx.fillStyle = 'rgba(105, 244, 131, 1)';
-                ctx.fillRect(10, 10, 50, 50);
-                ctx.fillStyle = 'rgba(105, 244, 131, .4)';
-                ctx.fillRect(30, 30, 50, 50);
-            }
+    $("#link").click(function (e) {   // Trigger `click` event
+        e.preventDefault();
+          window.location.href = "intro-packet.zip";  // Location of file to download
+    });
+  });
+  // $(document).draw()- to download canvas
+  function draw() {
+    var canvas = $('canvas')[0];
+
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'rgba(105, 244, 131, 1)';
+            ctx.fillRect(10, 10, 50, 50);
+            ctx.fillStyle = 'rgba(105, 244, 131, .4)';
+            ctx.fillRect(30, 30, 50, 50);
         }
-        $(document).ready(function() {
-            // $(document).draw();
-            $('#content').animate({
-                opacity:1,
-                marginTop:'0',
-            }, 800);
-            $('h2').click(function() {
-                $(this).next('.subtext').slideToggle('fast');
-                $(this).children('.hex').toggleClass('moved');
-            })
-        });
+    }
+// Signals that the DOM of the page is now ready,
+  $(document).ready(function() {
+
+    $('#content').animate({
+        opacity:1,
+        marginTop:'0', }, 800);
+
+        $('h2').click(function() {
+            $(this).next('.subtext').slideToggle('fast');
+            $(this).children('.hex').toggleClass('moved');
+    });
+  });
 </script>
 </body>
 </html>

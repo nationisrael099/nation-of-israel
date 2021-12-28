@@ -55,7 +55,7 @@ h2 {
 /* Link styles */
 a {
     text-decoration: none;
-    color: #191970;
+    color: #fff;
 }
 /* Color of links already visited. */
 a:visited  {
@@ -64,7 +64,7 @@ a:visited  {
 /*  Link styles on mouse hover. */
 a:hover {
     background-color: #D6A800;
-    color:   #000080;
+    color: #000080;
 }
 /* The card container */
 .card {
