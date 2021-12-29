@@ -1,9 +1,8 @@
 /**
- *   Title: WEB 330 – Enterprise JavaScript II
- *   Author: Professor Krasso
- *   Date: 08/15/2021
- *   Modified By: Professor  P. Itskovich, Keith Hall
- *   Description: This is the global .js file that manages localStorage for web-330 assignments and upcoming projects.
+ *   Title: Project Management Portal
+ *   Author: Keith Hall
+ *   Date: 12/25/2021
+ *   Description: This is the global .js file that manages localStorage and themes for the project management portal
  */
 // This sets the default theme to light if no selection is made.
 function setDefaultTheme() {
